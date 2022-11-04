@@ -9,17 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.13",
+    "@reduxjs/toolkit": "^1.8.6",
+    "@sanity/image-url": "^1.0.1",
+    "@stripe/stripe-js": "^1.42.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.1",
     "next": "13.0.1",
+    "next-auth": "^4.15.1",
+    "next-auth-sanity": "^1.4.4",
+    "next-sanity": "^1.0.3",
     "react": "18.2.0",
+    "react-currency-formatter": "^1.1.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-redux": "^8.0.5",
+    "react-responsive": "^9.0.0",
+    "react-responsive-carousel": "^3.2.23",
+    "stripe": "^10.16.0",
     "typescript": "4.8.4"
   },
   "devDependencies": {
+    "@types/react-currency-formatter": "^1.1.4",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1"
