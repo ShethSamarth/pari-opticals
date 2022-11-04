@@ -24,6 +24,7 @@ const Categories = ({ categories }: Props) => {
               height={500}
               src={urlFor(category.image[0]).url()}
               alt={category.title}
+              className="hover:scale-105 ease-in-out transition"
             />
           </Link>
         ))}

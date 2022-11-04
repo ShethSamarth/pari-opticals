@@ -12,7 +12,7 @@ const Product = ({ product }: Props) => {
   return (
     <Link
       href={`/products/${product.slug.current}`}
-      className="relative m-5 flex flex-col rounded-md border bg-white p-5"
+      className="relative m-5 flex flex-col rounded-md border bg-white p-5 hover:scale-105 ease-in-out transition"
     >
       <Image
         src={urlFor(product.image[0]).url()}

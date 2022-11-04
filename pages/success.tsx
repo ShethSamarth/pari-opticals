@@ -90,7 +90,7 @@ const Success = ({ products }: Props) => {
           <div className="mx-4 flex flex-col items-center justify-between text-sm lg:ml-14 lg:flex-row">
             <p className="hidden lg:inline">
               Need help?{" "}
-              <Link href="/support" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 Contact us
               </Link>
             </p>

@@ -20,7 +20,7 @@ const Footer = () => {
           />
         </Link>
         <p className="mt-4 text-sm text-gray-500 sm:ml-4 sm:mt-0 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:pl-4">
-          © 2020 Pari Opticals
+          © 2022 Pari Opticals
         </p>
         <span className="mt-4 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
           <Link

@@ -17,7 +17,7 @@ interface Props {
 
 export default function Home({ caraousel, categories, products }: Props) {
   return (
-    <div>
+    <div className="scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
       <Head>
         <title>Pari Opticals</title>
         <meta

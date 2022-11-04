@@ -15,7 +15,7 @@
     @apply hidden cursor-pointer text-lg tracking-wide opacity-75 transition hover:underline hover:opacity-100 lg:inline;
   }
   .headerIcon {
-    @apply h-6 w-6 cursor-pointer rounded-full opacity-75 transition hover:opacity-100;
+    @apply h-6 w-6 cursor-pointer opacity-75 transition hover:opacity-100;
   }
   .navLinksMenu {
     @apply flex w-full cursor-pointer flex-col border-b px-5 py-3 text-lg uppercase tracking-wide text-gray-500;

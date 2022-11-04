@@ -17,7 +17,7 @@ const Header = () => {
   const items = useSelector(selectBasketItems)
   const { data: session } = useSession()
   return (
-    <header className="sticky top-0 z-20">
+    <header className="sticky top-0 z-20 shadow-md">
       <nav className="flex items-center justify-between bg-white px-2 py-4 pr-3 shadow-sm lg:py-3 lg:px-10">
         <Link href="/" className="relative w-60 md:w-96">
           <Image
@@ -39,7 +39,7 @@ const Header = () => {
           <Link href="/collections/computer-glasses" className="navLinks">
             Computer Glasses
           </Link>
-          <Link href="/support" className="navLinks">
+          <Link href="/contact" className="navLinks">
             Support
           </Link>
         </ul>
@@ -51,7 +51,7 @@ const Header = () => {
               width={34}
               height={34}
               onClick={() => signOut()}
-              className="-mr-5 h-6 w-6 cursor-pointer rounded-full md:-mr-0"
+              className="-mr-5 h-6 w-6 cursor-pointer rounded-full md:-mr-0 rounde-full"
             />
           ) : (
             <UserIcon
@@ -59,7 +59,7 @@ const Header = () => {
               onClick={() => signIn()}
             />
           )}
-          <Link href="/support">
+          <Link href="/contact">
             <MapPinIcon className="headerIcon hidden md:flex" />
           </Link>
           <Link href="/checkout">
@@ -109,11 +109,11 @@ const Header = () => {
               Computer Glasses
             </Link>
             <Link
-              href="/support"
+              href="/contact"
               onClick={() => setShowMenu(!showMenu)}
               className="navLinksMenu"
             >
-              Support
+              Contact
             </Link>
           </ul>
         </div>

@@ -10,7 +10,7 @@ interface Props {
 
 const Caraousel = ({ caraousel }: Props) => {
   return (
-    <div className="relative">
+    <div className="relative shadow-2xl">
       <div className="absolute w-full" />
       <Carousel
         autoPlay
