@@ -10,7 +10,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useSelector } from "react-redux"
 import { selectBasketItems } from "../redux/basketSlice"
-import { signIn, signOut, useSession } from "next-auth/react"
+import { signIn, useSession } from "next-auth/react"
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -45,17 +45,21 @@ const Header = () => {
         </ul>
         <div className="flex items-center space-x-5">
           {session ? (
-            <Image
-              src={session.user?.image || "/assets/avatar.png"}
-              alt="Profile Photo"
-              width={34}
-              height={34}
-              onClick={() => signOut()}
-              className="-mr-5 h-6 w-6 cursor-pointer rounded-full md:-mr-0 rounde-full"
-            />
+            <Link
+              href="/profile"
+              className="-mr-5 h-6 w-6 cursor-pointer md:-mr-0"
+            >
+              <Image
+                src={session.user?.image || "/assets/avatar.png"}
+                alt="Profile Photo"
+                width={34}
+                height={34}
+                className="rounded-full"
+              />
+            </Link>
           ) : (
             <UserIcon
-              className="-mr-5 h-6 w-6 cursor-pointer rounded-full opacity-75 transition hover:opacity-100 md:-mr-0"
+              className="-mr-5 h-6 w-6 cursor-pointer opacity-75 transition hover:opacity-100 md:-mr-0"
               onClick={() => signIn()}
             />
           )}

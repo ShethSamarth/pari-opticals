@@ -42,7 +42,7 @@ const Success = ({ products }: Props) => {
   const { data: session } = useSession()
 
   return (
-    <div className="scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+    <div className="scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent md:h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
       <Head>
         <title>Thank you! - Pari Opticals</title>
         <link

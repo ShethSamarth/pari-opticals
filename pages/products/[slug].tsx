@@ -34,7 +34,7 @@ const ProductPage = ({ products }: Props) => {
   }
 
   return (
-    <div className="font-body text-gray-600 bg-gray-50 scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+    <div className="font-body text-gray-600 bg-gray-50 scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent md:h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
       <Head>
         <title>{product[0].title || "Product"} - Pari Opticals</title>
         <link
