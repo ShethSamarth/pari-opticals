@@ -15,7 +15,7 @@ const MenEyewear = ({ products }: Props) => {
     return element.men === true
   })
   return (
-    <div className="scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent md:h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+    <div className="custom-scrollbar">
       <Head>
         <title>Men Eyewear - Pari Opticals</title>
         <meta

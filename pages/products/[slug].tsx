@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { GetServerSideProps } from "next"
 import { useRouter } from "next/router"
 import React from "react"
@@ -13,6 +14,8 @@ import toast from "react-hot-toast"
 import Image from "next/image"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import { Carousel } from "react-responsive-carousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 interface Props {
   products: Product[]
@@ -34,7 +37,7 @@ const ProductPage = ({ products }: Props) => {
   }
 
   return (
-    <div className="font-body text-gray-600 bg-gray-50 scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent md:h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+    <div className="font-body text-gray-600 bg-gray-50 custom-scrollbar">
       <Head>
         <title>{product[0].title || "Product"} - Pari Opticals</title>
         <link
@@ -46,13 +49,20 @@ const ProductPage = ({ products }: Props) => {
       </Head>
       <Header />
       <div className="relative mx-auto flex flex-wrap lg:w-4/5 overflow-hidden py-24 lg:py-28 px-10">
-        <Image
-          alt="ecommerce"
-          className="h-auto w-full rounded object-contain object-center lg:w-1/2"
-          width={500}
-          height={500}
-          src={urlFor(product[0].image[0]).url()}
-        />
+        <div className="h-auto w-full rounded object-contain object-center lg:w-1/2">
+          <Carousel
+            autoPlay
+            infiniteLoop
+            showStatus={false}
+            interval={5000}
+            showArrows={true}
+            showThumbs={true}
+          >
+            {product[0].image.map((img) => (
+              <img key={img._key} alt="ecommerce" src={urlFor(img).url()} />
+            ))}
+          </Carousel>
+        </div>
         <div className="mt-6 w-full lg:mt-0 lg:w-1/2 lg:py-6 lg:pl-10">
           <h2 className="text-lg uppercase tracking-widest text-gray-500">
             Pari Opticals

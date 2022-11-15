@@ -46,7 +46,7 @@ const Profile = () => {
   }
 
   return (
-    <div className="scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent md:h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+    <div className="custom-scrollbar">
       <Head>
         <title>Profile - Pari Opticals</title>
         <meta
@@ -78,7 +78,7 @@ const Profile = () => {
           <div>
             <form className="space-y-4 md:space-y-6 p-10">
               <div>
-                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <label className="block mb-2 text-sm font-medium text-gray-900">
                   Your Name
                 </label>
                 <input
@@ -88,7 +88,7 @@ const Profile = () => {
                 />
               </div>
               <div>
-                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <label className="block mb-2 text-sm font-medium text-gray-900">
                   Your Email
                 </label>
                 <input
@@ -98,11 +98,11 @@ const Profile = () => {
                 />
               </div>
               <div>
-                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <label className="block mb-2 text-sm font-medium text-gray-900">
                   Your Phone Number
                 </label>
                 <input
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 cursor-not-allowed"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                   placeholder="9999999999"
                 />
               </div>
@@ -147,13 +147,13 @@ const Profile = () => {
               />
             </div>
             <div>
-              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              <label className="block mb-2 text-sm font-medium text-gray-900">
                 Pincode
               </label>
               <input
                 type="number"
                 placeholder="999999"
-                className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                 required
               />
             </div>
@@ -163,14 +163,14 @@ const Profile = () => {
             >
               Update Profile
             </button>
-            <button
-              type="submit"
-              className="w-full text-white border-2 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-red-500 hover:bg-red-600"
-              onClick={() => signOut()}
-            >
-              Sign Out
-            </button>
           </form>
+          <button
+            type="submit"
+            className="w-full text-white border-2 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-red-500 hover:bg-red-600"
+            onClick={() => signOut()}
+          >
+            Sign Out
+          </button>
         </div>
       </main>
       <Footer />

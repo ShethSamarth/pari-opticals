@@ -23,4 +23,7 @@
   .btn {
     @apply inline-flex cursor-pointer items-center justify-center space-x-3 rounded-lg border border-indigo-500 bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500 px-5 py-3 text-center text-base font-medium text-indigo-100 shadow-sm hover:text-white;
   }
+  .custom-scrollbar {
+    @apply scrollbar-thin scrollbar-thumb-gray-600/70 hover:scrollbar-thumb-gray-500 scrollbar-track-transparent lg:h-screen overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full;
+  }
 }
