@@ -40,11 +40,11 @@ const Header = () => {
             Computer Glasses
           </Link>
           <Link href="/contact" className="navLinks">
-            Support
+            Contact
           </Link>
         </ul>
         <div className="flex items-center space-x-5">
-          {session ? (
+          {/* {session ? (
             <Link
               href="/profile"
               className="-mr-5 h-6 w-6 cursor-pointer md:-mr-0"
@@ -62,7 +62,7 @@ const Header = () => {
               className="-mr-5 h-6 w-6 cursor-pointer opacity-75 transition hover:opacity-100 md:-mr-0"
               onClick={() => signIn()}
             />
-          )}
+          )} */}
           <Link href="/contact">
             <MapPinIcon className="headerIcon hidden md:flex" />
           </Link>

@@ -19,8 +19,6 @@ const Checkout = () => {
 
   const items = useSelector(selectBasketItems)
 
-  const router = useRouter()
-
   const basketTotal = useSelector(selectBasketTotal)
 
   const [groupedItemsInBasket, setGroupedItemsInBasket] = useState(
@@ -115,7 +113,7 @@ const Checkout = () => {
                         <Currency quantity={basketTotal} currency="INR" />
                       </span>
                     </h4>
-                    {session ? (
+                    {/* {session ? (
                       <Button
                         loading={loading}
                         title="Check Out"
@@ -127,7 +125,7 @@ const Checkout = () => {
                         title="Sign In To Checkout"
                         onClick={() => signIn()}
                       />
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>

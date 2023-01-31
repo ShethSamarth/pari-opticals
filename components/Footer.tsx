@@ -24,7 +24,7 @@ const Footer = () => {
         </p>
         <span className="mt-4 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
           <Link
-            href="https://www.facebook.com/Sheth.Samarth"
+            href="https://www.facebook.com/pari.opticals.54"
             target="_blank"
             className="text-gray-500"
           >
@@ -40,7 +40,7 @@ const Footer = () => {
             </svg>
           </Link>
           <Link
-            href="https://www.twitter.com/sheth_samarth"
+            href="https://twitter.com/pariopticals"
             target="_blank"
             className="ml-3 text-gray-500"
           >
@@ -56,9 +56,9 @@ const Footer = () => {
             </svg>
           </Link>
           <Link
-            href="https://www.instagram.com/sheth_samarth"
+            href="https://www.instagram.com/pariopticals"
             target="_blank"
-            className="ml-3 text-gray-500"
+            className="mx-3 text-gray-500"
           >
             <svg
               fill="none"
@@ -73,7 +73,7 @@ const Footer = () => {
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </Link>
-          <Link
+          {/* <Link
             href="https://www.linkedin.com/in/samarth-sheth-312a5923a/"
             target="_blank"
             className="ml-3 text-gray-500"
@@ -93,7 +93,7 @@ const Footer = () => {
               ></path>
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
-          </Link>
+          </Link> */}
         </span>
       </div>
     </footer>
